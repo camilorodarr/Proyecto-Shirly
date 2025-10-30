@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdaptArte | Personaliza tu mueble</title>
+  <link rel="stylesheet" href="style_buy.css">
+</head>
+<body>
+
+  <!-- 🧭 NAVBAR (idéntico al de las demás páginas) -->
+  <header class="navbar">
+    <div class="logo">ADAPTARTE</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="buy.html" class="active">Buy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="closing.html">Closing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🪑 SECCIÓN DE PERSONALIZACIÓN -->
+  <div class="content-box">
+    <div class="container">
+      <div class="image-section">
+        <img id="product-image" src="Silla_cafe.jpg" alt="Silla Plegable">
+      </div>
+
+
+
+  <!-- Solo reemplaza la parte del panel de configuración del mueble -->
+  <div class="config-section">
+  <h2>Personaliza tu mueble</h2>
+  <p>Elige las dimensiones y el color de tu silla AdaptArte.</p>
+
+  <div class="input-group">
+    <label for="height">Altura (cm)</label>
+    <input type="number" id="height" min="30" max="200" value="85">
+  </div>
+
+  <div class="input-group">
+    <label for="width">Ancho (cm)</label>
+    <input type="number" id="width" min="30" max="200" value="45">
+  </div>
+
+  <div class="input-group">
+    <label for="quantity">Cantidad</label>
+    <input type="number" id="quantity" min="1" value="1">
+  </div>
+
+  <div class="input-group">
+    <label>Color</label>
+    <div class="color-options">
+      <div class="color green" data-color="verde"></div>
+      <div class="color brown" data-color="cafe"></div>
+      <div class="color beige" data-color="beige"></div>
+    </div>
+  </div>
+
+  <button class="btn add" id="addToCartBtn">Agregar al carrito</button>
+</div>
+
+
+  <script src="buy.js"></script>
+</body>
+</html>
